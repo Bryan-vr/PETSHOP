@@ -1,0 +1,384 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+ 
+/* seteado */
+*{
+    font-family: "Lilita One", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos header */
+header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #f0e6e6d2;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+
+/* estilos barra navegacion */
+header nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 9px 16px -4px rgba(56,54,56,1);
+    /* background: red; */
+    
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 20px 0 20px ;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #5f15a3;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header nav img{
+    width: 130px;
+    height: 130px;
+
+}
+
+#hero{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#hero h2{
+    text-align: left;
+    color: #b62929;
+    font-size: 70px;
+    z-index: 1;
+    margin-left: 300px;
+}
+
+#hero h1{
+    margin: 0 auto;
+    font-size: 140px;
+    z-index: 1;
+}
+
+#hero button{
+    color: #ffffff;
+    margin-top: 50px;
+    background: #b82424;
+    position: absolute;
+    z-index: 999;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none ;
+    box-shadow: 0px 9px 16px -4px rgba(56,54,56,1);
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+
+#hero button:hover{
+    transform:scale(.9);
+    background: #000000f1;
+
+}
+
+#hero img{
+    z-index: 4;
+    position: absolute;
+    right: 15%;
+    bottom: 0%;
+    width: 900px;
+}
+
+/* seccion 1 */
+
+#reservas{
+    text-align: center;
+    background: #9b9696;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#reservas h2{
+    color: #000;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+#reservas p{
+    color: #383434;
+    font-size: 18px;
+}
+
+#reservas .form{
+    padding: 50px 60px 50px 6%;
+    margin-top: 50px;
+    position: absolute;
+    left: 210px;
+    background: #dfd9d9de ;
+
+    
+}
+
+#reservas .form h3{
+    color: #b62929 ;
+    font-size: 35px;
+}
+
+#reservas .form p{
+    color: #1a1919 ;
+    font-size: 19px;
+}
+
+#reservas .form #fecha,
+#reservas .form #hora{
+    border-radius: 7px;
+    font-size: 15px;
+    color: #292020;
+    box-shadow: 0px 9px 16px -4px rgba(56,54,56,1);
+    margin-bottom: 33px;
+   border: 1px;
+}
+
+
+
+#reservas .form button{
+    border-radius: 9px;
+    width: 110px ;
+    height: 40px ;
+    font-size: 15px;
+    color: #292020;
+    box-shadow: 0px 9px 16px -4px rgba(56,54,56,1);
+    background-color: #ad391b;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#reservas .form button:hover{
+    transform: scale(.9);
+    background-color: #ffffff;
+}
+
+
+#reservas .img-reserva img{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    top: 10px;
+    right: -15%;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+#reservas .img-reserva img:hover{
+    transform:scale(.9);
+    
+}
+/* Estilos seccion servicios  */
+
+#servicios{
+    width: 100%;
+    background-color: #fff;
+    text-align: center; 
+    padding-top: 70px ;
+    padding-bottom: 100px;
+}
+
+
+#servicios h2{
+    font-size:50px ;
+    margin-bottom: 30px;
+    color: #b82424;
+}
+
+#servicios p{
+    font-size: 18px;
+}
+
+#servicios .fila{
+    width: 80%;
+    margin:0 auto ;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+}
+
+#servicios .fila p{
+    font-size: 18px;
+    color: #4b4747;
+}
+
+#servicios .fila h3{
+    font-size: 30px;
+    color: #b62929c5;
+    position: absolute;
+    top: 10px ;
+    left: 0; 
+    right: 0;
+    text-align: center;
+}
+
+#servicios .col-plan{  
+    position: relative;
+}
+
+
+#servicios .col-plan img{
+    width: 80% ;
+    height: 85%;
+    transition: .4s;
+}
+
+#servicios .col-plan img:hover{
+    border-radius: 50%;
+}
+
+
+/* cuidados */
+
+#cuidados{
+    width: 100%;
+    height: 100%;
+    padding-top:40px ;
+    text-align: center;
+    background: url(../img/cuidados\ fondo.jpg);
+}
+
+#cuidados h2{
+    color: #b62929;
+    padding-bottom:20px ;
+    font-size: 50px;
+}
+
+#cuidados p{
+   color: #4d4848;
+   font-size:15px ;
+}
+
+#cuidados .fila-cuidados{
+    width: 80%;
+    margin:0 auto ;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+
+}
+
+#cuidados .fila-cuidados img{
+    width: 300px;
+    height: 300px;
+    box-shadow:  0px 9px 16px -4px rgba(56,54,56,1);
+    transition: .2s;
+}
+
+#cuidados .fila-cuidados img:hover{
+    rotate: 360deg;
+    border-radius: 100%;
+    border: solid #865050;
+    transform: scale(.9);
+
+}
+
+#cuidados .fila-cuidados #mitad{
+    width: 400px;
+    height: 300px;
+}
+
+#cuidados .fila-cuidados h3{
+    color: #974949;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#cuidados .fila-cuidados p{
+    color: #4e4040;
+    font-size: 20px;
+    padding-top: 10px;
+    
+}
+
+#cuidados .fila-cuidados button{
+    color: #af2121;
+    font-size: 20px;
+    width:90px ;
+    height: 40px;
+    background: #292020;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#cuidados .fila-cuidados button:hover{
+    transform: scale(.9);
+    background: #ad391b;
+    border-radius: 7px;
+    color: #9b9696;
+
+
+}
+ 
+footer #sec{
+    width: 100%;
+    height: 40%;
+    background: #df3131;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+footer #sec input{
+    padding-top: 15px;
+    
+    
+    
+}
+
+footer #sec button{
+    width: 80px;
+    height: 40px;
+    background: #af2e2e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+footer #sec p{
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+footer{
+    background-color: #363434;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    color: #fff;
+
+}
